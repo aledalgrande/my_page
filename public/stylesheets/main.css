@@ -1,6 +1,6 @@
 #wrapper { font-family: Helvetica; font-size: 16px; line-height: 25.6px; background-color: #f7ede3; color: black; }
 #wrapper #introduction { margin: auto; width: 1200px; height: 706px; background-image: url(../images/ale-filtered.png); background-repeat: no-repeat; }
-#wrapper #introduction #teaser { background-image: url(../images/quotes.png); background-repeat: no-repeat; width: 350px; position: relative; left: 55%; top: 80px; text-align: center; padding-left: 80px; }
+#wrapper #introduction #teaser { background-image: url(../images/quotes.png); background-repeat: no-repeat; width: 350px; position: relative; left: 50%; top: 100px; text-align: center; padding-left: 80px; }
 #wrapper #introduction #teaser a { font-size: 30px; line-height: 45px; font-weight: bold; color: #802222; }
 #wrapper #introduction #teaser .title { font-size: 34px; line-height: 51px; font-weight: bold; }
 #wrapper #introduction #info { margin-top: 350px; }
