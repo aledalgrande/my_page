@@ -1,0 +1,15 @@
+#wrapper { font-family: Helvetica; font-size: 16px; line-height: 25.6px; background-color: #f7ede3; color: black; }
+#wrapper #introduction { margin: auto; width: 1200px; height: 706px; background-image: url(../images/ale-filtered.png); background-repeat: no-repeat; }
+#wrapper #introduction #teaser { background-image: url(../images/quotes.png); background-repeat: no-repeat; width: 350px; position: relative; left: 55%; top: 80px; text-align: center; padding-left: 80px; }
+#wrapper #introduction #teaser a { font-size: 30px; line-height: 45px; font-weight: bold; color: #802222; }
+#wrapper #introduction #teaser .title { font-size: 34px; line-height: 51px; font-weight: bold; }
+#wrapper #introduction #info { margin-top: 350px; }
+#wrapper #introduction #info .name { font-size: 50px; line-height: 60px; font-weight: bold; text-align: right; }
+#wrapper #introduction #info .description { font-size: 40px; font-weight: bold; text-align: right; font-style: italic; color: #802222; }
+#wrapper #details { background-color: #802222; color: #f7ede3; background-image: url(../images/background.jpg); background-repeat: repeat-x; padding-top: 30px; }
+#wrapper #details #content { margin: auto; width: 900px; }
+#wrapper #details #content #blablabla { background-image: url(../images/white-quotes.png); background-repeat: no-repeat; padding-left: 65px; }
+#wrapper #details #content #blablabla .important { font-weight: bold; color: black; font-size: 18px; }
+#wrapper #details #content #blablabla p a { font-weight: bold; text-decoration: underline; color: #f7ede3; }
+#wrapper #details #content h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; }
+#wrapper #details #content #footer { text-align: center; margin-top: 50px; }

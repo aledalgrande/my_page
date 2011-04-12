@@ -1,0 +1,92 @@
+$red: #802222;
+$bright: #F7EDE3;
+$black: #000000;
+$basic_size: 16px;
+
+#wrapper {
+	font-family: Helvetica;
+	font-size: $basic_size;
+	line-height: $basic_size * 1.6;
+	background-color: $bright;
+	color: $black;
+	#introduction {
+		margin: auto;
+		width: 1200px;
+		height: 706px;
+		background-image: url(../images/ale-filtered.png);
+		background-repeat: no-repeat;
+		#teaser {
+			background-image: url(../images/quotes.png);
+			background-repeat: no-repeat;
+			width: 350px;
+			position: relative;
+			left: 55%;
+			top: 80px;
+			text-align: center;
+			padding-left: 80px;
+			a {
+				font-size: 30px;
+				line-height: 45px;
+				font-weight: bold;	
+				color: $red;
+			}
+			.title {
+				font-size: 34px;
+				line-height: 51px;
+				font-weight: bold;
+			}
+		}
+		#info {
+			margin-top: 350px;
+			.name {
+				font-size: 50px;
+				line-height: 60px;
+				font-weight: bold;
+				text-align: right;
+			}
+			.description {
+				font-size: 40px;
+				font-weight: bold;
+				text-align: right;
+				font-style: italic;
+				color: $red;
+			}
+		}
+	}
+	#details {
+		background-color: $red;
+		color: $bright;
+		background-image: url(../images/background.jpg);
+		background-repeat: repeat-x;
+		padding-top: 30px;
+		#content {
+			margin: auto;
+			width: 900px;
+			#blablabla {
+				background-image: url(../images/white-quotes.png);
+				background-repeat: no-repeat;
+				padding-left: 65px;
+				.important {
+					font-weight: bold;
+					color: $black;
+					font-size: $basic_size + 2;
+				}
+				p a {
+					font-weight: bold;	
+					text-decoration: underline;
+					color: $bright;
+				}
+			}
+			h2 {
+				font-size: 24px;
+				line-height: 36px;
+				font-weight: bold;
+				margin-top: 30px;
+			}
+			#footer {
+				text-align: center;
+				margin-top: 50px;
+			}
+		}
+	}
+}
