@@ -141,6 +141,21 @@ $basic_size: 18px;
 					color: $black;
 					text-shadow: 1px 1px 0px #B05252;
 				}
+				ul {
+					li {
+						span.important {
+							text-shadow: 1px 1px 0px #B05252;
+							font-weight: bold;
+							color: $black;
+							font-size: $basic_size + 1;
+						}
+						a {
+							font-weight: bold;	
+							text-decoration: underline;
+							color: $bright;
+						}
+					}
+				}
 			}
 			#footer {
 				text-align: center;

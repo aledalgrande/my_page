@@ -45,7 +45,7 @@
 		<div id="industries" class="clearfix">
 			<h2>Industries of expertise</h2>
 			<ul>
-				<% %w(eCommerce Telephony Social).each do |name| %>
+				<% %w(eCommerce Telephony Social Media).each do |name| %>
 					<li>
 						<%= image_tag "#{name}.jpg", :title => name %>
 						<p>
@@ -56,10 +56,32 @@
 			</ul>
 		</div>
 		<div id="portfolio" class="clearfix">
-			<h2 class="clearfix">Portfolio examples</h2>
+			<h2 class="clearfix">Public projects and Contributions</h2>
 			<ul>
-				<li>portfolio 1</li>
-				<li>portfolio 2</li>
+				<li>
+					<span class="important">BFT</span> a business to business product configurator (done for Develon) - 
+					<%= link_to truncate('http://www.bft.co.uk/jsp/en/categorie/index.jsp', :length => 42), 'http://www.bft.co.uk/jsp/en/categorie/index.jsp', :target => 'blank' %>
+				</li>
+				<li>
+					<span class="important">segmented-memcache</span> fork of the memcache lib to include segmentation of big chunks - 
+					<%= link_to truncate('http://github.com/develon/segmented-memcache', :length => 21), 'http://github.com/develon/segmented-memcache', :target => 'blank' %>
+				</li>
+				<li>
+					<span class="important">validates_as_vat_number</span> VAT validator using the European VIES system - 
+					<%= link_to truncate('http://github.com/develon/validates_as_vat_number', :length => 32), 'http://github.com/develon/validates_as_vat_number', :target => 'blank' %>
+				</li>
+				<li>
+					<span class="important">mongo-twitter-streaming</span> test Sinatra and Twitter project - 
+					<%= link_to truncate('http://github.com/aledalgrande/mongo-twitter-streaming', :length => 48), 'http://github.com/aledalgrande/mongo-twitter-streaming', :target => 'blank' %>
+				</li>
+				<li>
+					<span class="important">fancy-a-cake</span> example job request app - 
+					<%= link_to truncate('http://github.com/aledalgrande/fancy-a-cake', :length => 48), 'http://github.com/aledalgrande/fancy-a-cake', :target => 'blank' %>
+				</li>
+				<li>
+					<span class="important">cuke4php</span> bridge between PHP and Cucumber - 
+					<%= link_to truncate('http://github.com/aledalgrande/cuke4php', :length => 48), 'http://github.com/aledalgrande/cuke4php', :target => 'blank' %>
+				</li>
 			</ul>
 		</div>
 		<div id="contacts" class="clearfix">

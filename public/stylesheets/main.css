@@ -26,4 +26,6 @@
 #wrapper #details #content #competencies ul li p, #wrapper #details #content #industries ul li p { margin-top: 12px; }
 #wrapper #details #content #competencies h2, #wrapper #details #content #industries h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #B05252; }
 #wrapper #details #content #portfolio h2, #wrapper #details #content #contacts h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #B05252; }
+#wrapper #details #content #portfolio ul li span.important, #wrapper #details #content #contacts ul li span.important { text-shadow: 1px 1px 0px #B05252; font-weight: bold; color: black; font-size: 19px; }
+#wrapper #details #content #portfolio ul li a, #wrapper #details #content #contacts ul li a { font-weight: bold; text-decoration: underline; color: #f7ede3; }
 #wrapper #details #content #footer { text-align: center; margin-top: 50px; }

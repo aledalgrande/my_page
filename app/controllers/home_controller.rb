@@ -7,17 +7,20 @@ class HomeController < ApplicationController
                       :pair => 'Pair Programming',
                       :jquery => 'jQuery',
                       :tdd => 'TDD',
-                      :html => 'HTML',
-                      :css => 'CSS',
+                      :html => 'HTML 4/5',
+                      :css => 'CSS 2/3',
+                      :sass => 'Sass',
+                      :haml => 'Haml',
                       :ci => 'Continuous Integration',
                       :agile => 'Agile',
+                      :memcache => 'Memcache',
                       :sinatra => 'Sinatra',
                       :cucumber => 'Cucumber',
+                      :mac => 'Mac',
+                      :linux => 'Linux',
                       :php => 'PHP 5.2.x/5.3.x',
                       :phpagi => 'PHPAgi',
-                      :java => 'Java 5/6',
-                      :mac => 'Mac',
-                      :linux => 'Linux' }
+                      :java => 'Java 5/6' }
   end
   
 end
