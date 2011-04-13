@@ -3,6 +3,27 @@ $bright: #F7EDE3;
 $black: #000000;
 $basic_size: 18px;
 
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
 #wrapper {
 	font-family: Helvetica;
 	font-size: $basic_size;
@@ -35,6 +56,10 @@ $basic_size: 18px;
 				font-size: 34px;
 				line-height: 51px;
 				font-weight: bold;
+			}
+			.availability {
+				font-size: $basic_size - 5;
+				line-height: $basic_size;
 			}
 		}
 		#info {
@@ -80,13 +105,42 @@ $basic_size: 18px;
 					color: $bright;
 				}
 			}
-			h2 {
-				font-size: 24px;
-				line-height: 36px;
-				font-weight: bold;
-				margin-top: 30px;
-				color: $black;
-				text-shadow: 1px 1px 0px #B05252;
+			#competencies, #industries {
+				ul {
+					li {
+						padding: 5px;
+						width: 290px;
+						height: 50px;
+						float: left;
+						img {
+							float: left;
+							width: 50px;
+							height: 50px;
+							margin-right: 15px;
+						}
+						p {
+							margin-top: 12px;
+						}
+					}
+				}
+				h2 {
+					font-size: 24px;
+					line-height: 36px;
+					font-weight: bold;
+					margin-top: 30px;
+					color: $black;
+					text-shadow: 1px 1px 0px #B05252;
+				}
+			}
+			#portfolio, #contacts {
+				h2 {
+					font-size: 24px;
+					line-height: 36px;
+					font-weight: bold;
+					margin-top: 30px;
+					color: $black;
+					text-shadow: 1px 1px 0px #B05252;
+				}
 			}
 			#footer {
 				text-align: center;

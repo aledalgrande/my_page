@@ -8,6 +8,7 @@
 		<a href="#contacts">
 			Hire me
 		</a>
+		<p class="availability">(available from 13/6)</p>
 	</div>
 	<div id="info">
 		<p class="name">Alessandro Dal Grande</p>
@@ -16,7 +17,7 @@
 </div>
 
 <div id="details">
-	<div id="content">
+	<div id="content" class="clearfix">
 		<div id="blablabla">
 			<p>
 				Hi, I'm Alessandro, a <span class="important">full stack Web developer</span>. I started programming on my own during high school, with Visual Basic on Windows 98SE. Meh. That's a big jump being working with Ruby and Web now, more than 10 years later, but the outcome for me is the same as when I started: I <span class="important">create something</span>. And something <span class="important">great</span>. 
@@ -28,33 +29,40 @@
 				I like entrepreneurship, startups, house music, bartending, art, a lot of sports and culture in general!
 			</p>
 		</div>
-		<h2>Competencies</h2>
-		<ul>
-			<li>
-				Ruby 1.8.x/1.9.x
-			</li>
-			<li>
-				Rails 2.x/3.x
-			</li>
-		</ul>
-		<h2>Industries of expertise</h2>
-		<ul>
-			<li>
-				eCommerce
-			</li>
-			<li>
-				Telephony
-			</li>
-			<li>
-				Social
-			</li>
-		</ul>
-		<h2>Portfolio examples</h2>
-		<ul>
-			<li>portfolio 1</li>
-			<li>portfolio 2</li>
-		</ul>
-		<div id="contacts">
+		<div id="competencies" class="clearfix">
+			<h2>Competencies</h2>
+			<ul>
+			<% @competencies.each do |name, text| %>
+				<li>
+					<%= image_tag "#{name}.jpg", :title => name %>
+					<p>
+						<%= text %>
+					</p>
+				</li>
+			<% end %>
+			</ul>
+		</div>
+		<div id="industries" class="clearfix">
+			<h2>Industries of expertise</h2>
+			<ul>
+				<% %w(eCommerce Telephony Social).each do |name| %>
+					<li>
+						<%= image_tag "#{name}.jpg", :title => name %>
+						<p>
+							<%= name %>
+						</p>
+					</li>
+				<% end %>
+			</ul>
+		</div>
+		<div id="portfolio" class="clearfix">
+			<h2 class="clearfix">Portfolio examples</h2>
+			<ul>
+				<li>portfolio 1</li>
+				<li>portfolio 2</li>
+			</ul>
+		</div>
+		<div id="contacts" class="clearfix">
 			<h2>Contacts (click and expand options)</h2>
 			<ul>
 				<li>
