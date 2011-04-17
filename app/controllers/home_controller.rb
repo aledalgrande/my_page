@@ -14,7 +14,7 @@ class HomeController < ApplicationController
                       :haml => 'Haml',
                       :ci => 'Continuous Integration',
                       :agile => 'Agile',
-                      :memcache => 'Memcache',
+                      :memcached => 'Memcached',
                       :sinatra => 'Sinatra',
                       :cucumber => 'Cucumber',
                       :mac => 'Mac',

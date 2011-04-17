@@ -47,4 +47,4 @@ html, body { height: 100%; background-color: #802222; }
 #wrapper #details #content #contacts ul li.email form p textarea { font-family: Helvetica; font-size: 18px; line-height: 28.8px; padding: 4px; width: 500px; margin-left: 52px; }
 #wrapper #details #content #contacts ul li.posterous p a, #wrapper #details #content #contacts ul li.lrug p a { font-weight: bold; text-decoration: underline; color: #f7ede3; }
 #wrapper #details #content footer { text-align: center; margin-top: 50px; vertical-align: bottom; }
-#wrapper #details #content footer img { vertical-align: bottom; }
+#wrapper #details #content footer img { vertical-align: bottom; width: 850px; height: 100px; }

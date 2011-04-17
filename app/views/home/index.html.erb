@@ -31,10 +31,10 @@
 		</div>
 		<div id="competencies" class="clearfix">
 			<h2>Competencies</h2>
-			<ul>
+			<ul class="rumble">
 			<% @competencies.each do |name, text| %>
 				<li>
-					<%= image_tag "#{name}.jpg", :title => name, :class => 'icon' %>
+					<%= image_tag "competencies/#{name}.jpg", :title => name, :class => 'icon' %>
 					<p>
 						<%= text %>
 					</p>
@@ -47,7 +47,7 @@
 			<ul>
 				<% %w(eCommerce Telephony Social Media).each do |name| %>
 					<li>
-						<%= image_tag "#{name}.jpg", :title => name %>
+						<%= image_tag "industries/#{name}.jpg", :title => name %>
 						<p>
 							<%= name %>
 						</p>
@@ -88,7 +88,7 @@
 			<%= render :partial => 'contacts' %>
 		</div>
 		<footer>
-			<img src="" style="height: 100px; width: 850px;" alt="London buildings">
+			<%= image_tag "london-city.png", :title => "title", :class => "class" %>
 		</footer>
 	</div>
 </div>
@@ -98,6 +98,6 @@
 <% end %>
 <% javascript_tag do %>
 	$(document).ready(function(){
-		$('.icon').jrumble();
+		$('ul.rumble li').jrumble({rumblee: 'img'});
 	});
 <% end %>
