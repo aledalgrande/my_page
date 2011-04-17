@@ -192,47 +192,47 @@ html, body {
 								width: 640px;
 								display: none;
 							}
-							&.twilio img {
-								width: 100px;
-								height: 50px;
-								vertical-align: middle;
-							}
-							&.skype img {
-								width: 124px;
-								height: 52px;
-							}
-							&.email form {
-								p.from input {
-									font-family: Helvetica;
-									font-size: $basic_size;
-									line-height: $basic_size * 1.6;
-									padding: 3px;
-									width: 500px;
-								}
-								p.to {
-									margin: 5px 0;
-									span {
-										margin-left: 20px;
-									}
-								}
-								p textarea {
-									font-family: Helvetica;
-									font-size: $basic_size;
-									line-height: $basic_size * 1.6;
-									padding: 4px;
-									width: 500px;
-									margin-left: 52px;
-								}
-								p.send {
-									
-								}
-							}
 						}
 						&.active {
 							background-color: #903232;
 							padding: 15px;
 							&.directions p {
 								margin: 5px;
+							}
+						}
+						&.twilio img {
+							width: 94px;
+							height: 94px;
+							vertical-align: middle;
+						}
+						&.skype img {
+							width: 111px;
+							height: 40px;
+						}
+						&.email form {
+							p.from input {
+								font-family: Helvetica;
+								font-size: $basic_size;
+								line-height: $basic_size * 1.6;
+								padding: 3px;
+								width: 500px;
+							}
+							p.to {
+								margin: 5px 0;
+								span {
+									margin-left: 20px;
+								}
+							}
+							p textarea {
+								font-family: Helvetica;
+								font-size: $basic_size;
+								line-height: $basic_size * 1.6;
+								padding: 4px;
+								width: 500px;
+								margin-left: 52px;
+							}
+							p.send {
+								
 							}
 						}
 						&.posterous p a, &.lrug p a {

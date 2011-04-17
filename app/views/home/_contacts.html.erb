@@ -1,38 +1,38 @@
 <h2>Contacts</h2>
 <ul id="contacts">
-	<li class="clearfix active">
+	<li class="clearfix active twilio">
 		<div class="name">
 			Call me on mobile
 		</div>
-		<div class="directions twilio">
+		<div class="directions">
 			<p>
 				5 free Twilio calls every day for my clients! (0 remaining)
 			</p>
 			<p>
-				<%= image_tag "twilio_disabled.jpg", :title => "twilio call disabled" %> +44 7522 593913
+				<%= image_tag "twilio-disabled.png", :title => "twilio call disabled" %> +44 7522 593913
 			</p>
 		</div>
 	</li>
-	<li class="clearfix">
+	<li class="clearfix skype">
 		<div class="name">
 			Call me on Skype
 		</div>
-		<div class="directions skype">
+		<div class="directions">
 			<p>
 				alessandro.dalgrande
 			</p>
 			<p>
 				<% link_to 'skype:alessandro.dalgrande?call' do %>
-					<%= image_tag "http://download.skype.com/share/skypebuttons/buttons/call_blue_white_124x52.png", :title => "title", :class => "class" %>
+					<%= image_tag 'skype.png', :title => 'call me on Skype' %>
 				<% end %>
 			</p>
 		</div>
 	</li>
-	<li class="clearfix">
+	<li class="clearfix email">
 		<div class="name">
 			Write me an email
 		</div>
-		<div class="directions email">
+		<div class="directions">
 			<% form_tag({:action => 'mail'}, :remote => :true) do %>
 				<p class="from">
 					<%= label_tag 'email', "From: " %>
@@ -57,7 +57,7 @@
 		<div class="directions">
 			<p>
 				<% link_to 'http://www.twitter.com/aledalgrande', :target => :blank do %>
-					<img src="http://twitter-badges.s3.amazonaws.com/follow_me-b.png" alt="Follow aledalgrande on Twitter"/>
+					<%= image_tag "twitter.png", :title => "Follow aledalgrande on Twitter" %>
 				<% end %>
 			</p>
 		</div>
@@ -69,7 +69,7 @@
 		<div class="directions">
 			<p>
 				<% link_to 'http://uk.linkedin.com/in/alessandrodalgrande', :target => :blank do %>
-					<img src="http://www.linkedin.com/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Alessandro Dal Grande's profile on LinkedIn">
+					<%= image_tag "linkedin.png", :title => "View Alessandro Dal Grande's profile on LinkedIn" %>
 				<% end %>
 			</p>
 		</div>
@@ -81,7 +81,7 @@
 		<div class="directions">
 			<p>
 				<% link_to 'goodies/AlessandroDalGrande.vcf' do %>
-					<%= image_tag "", :title => "title", :class => "class" %>
+					<%= image_tag "vcard.png", :title => "vcard" %>
 				<% end %>
 			</p>
 		</div>
