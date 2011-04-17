@@ -1,5 +1,6 @@
 MyPage::Application.routes.draw do
   get "home/index"
+  post "home/mail"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

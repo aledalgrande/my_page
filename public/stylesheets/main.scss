@@ -3,25 +3,36 @@ $bright: #F7EDE3;
 $black: #000000;
 $basic_size: 18px;
 
+html, body {
+	height: 100%;
+	background-color: $red;
+}
+
 /* float clearing for IE6 */
 * html .clearfix{
-  height: 1%;
-  overflow: visible;
+	height: 1%;
+	overflow: visible;
 }
 
 /* float clearing for IE7 */
 *+html .clearfix{
-  min-height: 1%;
+	min-height: 1%;
 }
 
 /* float clearing for everyone else */
 .clearfix:after{
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden;
-  font-size: 0;
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	font-size: 0;
+}
+
+#skypedetectionswf {
+	position: absolute;
+	left: -1x0px;
+	top: 0px;
 }
 
 #wrapper {
@@ -132,7 +143,7 @@ $basic_size: 18px;
 					text-shadow: 1px 1px 0px #B05252;
 				}
 			}
-			#portfolio, #contacts {
+			#portfolio {
 				h2 {
 					font-size: 24px;
 					line-height: 36px;
@@ -157,9 +168,88 @@ $basic_size: 18px;
 					}
 				}
 			}
-			#footer {
+			#contacts {
+				h2 {
+					font-size: 24px;
+					line-height: 36px;
+					font-weight: bold;
+					margin-top: 30px;
+					color: $black;
+					text-shadow: 1px 1px 0px #B05252;
+				}
+				ul {
+					li {
+						cursor: pointer;
+						div {
+							float: left;
+							&.name {
+								width: 200px;
+								text-shadow: 1px 1px 0px #B05252;
+								font-weight: bold;
+								color: $black;
+							}
+							&.directions {
+								width: 640px;
+								display: none;
+							}
+							&.twilio img {
+								width: 100px;
+								height: 50px;
+								vertical-align: middle;
+							}
+							&.skype img {
+								width: 124px;
+								height: 52px;
+							}
+							&.email form {
+								p.from input {
+									font-family: Helvetica;
+									font-size: $basic_size;
+									line-height: $basic_size * 1.6;
+									padding: 3px;
+									width: 500px;
+								}
+								p.to {
+									margin: 5px 0;
+									span {
+										margin-left: 20px;
+									}
+								}
+								p textarea {
+									font-family: Helvetica;
+									font-size: $basic_size;
+									line-height: $basic_size * 1.6;
+									padding: 4px;
+									width: 500px;
+									margin-left: 52px;
+								}
+								p.send {
+									
+								}
+							}
+						}
+						&.active {
+							background-color: #903232;
+							padding: 15px;
+							&.directions p {
+								margin: 5px;
+							}
+						}
+						&.posterous p a, &.lrug p a {
+							font-weight: bold;	
+							text-decoration: underline;
+							color: $bright;
+						}
+					}
+				}
+			}
+			footer {
 				text-align: center;
 				margin-top: 50px;
+				vertical-align: bottom;
+				img {
+					vertical-align: bottom;
+				}
 			}
 		}
 	}

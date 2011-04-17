@@ -7,6 +7,7 @@ class HomeController < ApplicationController
                       :pair => 'Pair Programming',
                       :jquery => 'jQuery',
                       :tdd => 'TDD',
+                      :mysql => 'MySQL',
                       :html => 'HTML 4/5',
                       :css => 'CSS 2/3',
                       :sass => 'Sass',
@@ -21,6 +22,10 @@ class HomeController < ApplicationController
                       :php => 'PHP 5.2.x/5.3.x',
                       :phpagi => 'PHPAgi',
                       :java => 'Java 5/6' }
+  end
+  
+  def mail
+    ClientMailer.message_from_client(params[:email], params[:message]).deliver
   end
   
 end

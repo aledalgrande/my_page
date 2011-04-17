@@ -1,0 +1,127 @@
+<h2>Contacts</h2>
+<ul id="contacts">
+	<li class="clearfix active">
+		<div class="name">
+			Call me on mobile
+		</div>
+		<div class="directions twilio">
+			<p>
+				5 free Twilio calls every day for my clients! (0 remaining)
+			</p>
+			<p>
+				<%= image_tag "twilio_disabled.jpg", :title => "twilio call disabled" %> +44 7522 593913
+			</p>
+		</div>
+	</li>
+	<li class="clearfix">
+		<div class="name">
+			Call me on Skype
+		</div>
+		<div class="directions skype">
+			<p>
+				alessandro.dalgrande
+			</p>
+			<p>
+				<% link_to 'skype:alessandro.dalgrande?call' do %>
+					<%= image_tag "http://download.skype.com/share/skypebuttons/buttons/call_blue_white_124x52.png", :title => "title", :class => "class" %>
+				<% end %>
+			</p>
+		</div>
+	</li>
+	<li class="clearfix">
+		<div class="name">
+			Write me an email
+		</div>
+		<div class="directions email">
+			<% form_tag({:action => 'mail'}, :remote => :true) do %>
+				<p class="from">
+					<%= label_tag 'email', "From: " %>
+					<%= text_field_tag 'email', nil, :placeholder => 'myemail@example.com' %>
+				</p>
+				<p class="to">
+					To: <span>adgror@gmail.com</span>
+				</p>
+				<p class="message">
+					<%= text_area_tag 'message', nil, :rows => 10, :cols => 25 %>
+				</p>
+				<p class="send">
+					<%= submit_tag 'Send', :disable_with => 'Sending...' %>
+				</p>
+			<% end -%>
+		</div>
+	</li>
+	<li class="clearfix twitter">
+		<div class="name">
+			Tweet me
+		</div>
+		<div class="directions">
+			<p>
+				<% link_to 'http://www.twitter.com/aledalgrande', :target => :blank do %>
+					<img src="http://twitter-badges.s3.amazonaws.com/follow_me-b.png" alt="Follow aledalgrande on Twitter"/>
+				<% end %>
+			</p>
+		</div>
+	</li>
+	<li class="clearfix linkedin">
+		<div class="name">
+			Write me on LinkedIn
+		</div>
+		<div class="directions">
+			<p>
+				<% link_to 'http://uk.linkedin.com/in/alessandrodalgrande', :target => :blank do %>
+					<img src="http://www.linkedin.com/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Alessandro Dal Grande's profile on LinkedIn">
+				<% end %>
+			</p>
+		</div>
+	</li>
+	<li class="clearfix vcard">
+		<div class="name">
+			Download my vCard
+		</div>
+		<div class="directions">
+			<p>
+				<% link_to 'goodies/AlessandroDalGrande.vcf' do %>
+					<%= image_tag "", :title => "title", :class => "class" %>
+				<% end %>
+			</p>
+		</div>
+	</li>
+	<li class="clearfix posterous">
+		<div class="name">
+			Comment on my blog
+		</div>
+		<div class="directions">
+			<p>
+				My blog is at: <%= link_to 'http://posterous.com/aledalgrande', 'http://posterous.com/aledalgrande', :target => :blank %>
+			</p>
+		</div>
+	</li>
+	<li class="clearfix lrug">
+		<div class="name">
+			Meet me at LRUG
+		</div>
+		<div class="directions">
+			<p>
+				You can easily spot me there, come for a chat, no obligation!
+			</p>
+			<p>
+				<%= link_to 'LRUG: London Ruby User Group', 'http://lrug.org/', :target => :blank %>
+			</p>
+		</div>
+	</li>
+</ul>
+
+<%= javascript_include_tag 'http://download.skype.com/share/skypebuttons/js/skypeCheck.js', :cache => true %>
+<% javascript_tag do %>
+	$(document).ready(function() {
+		$('.active .directions').show();
+	});
+	$('#contacts li').click(function() {
+		if (!$(this).hasClass('active')) {
+			$('#contacts li.active .directions').slideUp(500);
+			$('#contacts li.active').removeClass('active');
+			$(this).addClass('active');
+			$(this).find('.directions').slideDown(500);
+		}
+	});
+<% end %>

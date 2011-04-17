@@ -1,6 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.5'
+gem 'rails', '3.0.6'
+gem 'sass'
+gem 'mail'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,7 +10,9 @@ group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec', '>= 2.3.0'
 	gem 'rspec-rails'
-	gem 'sass'
+	gem 'heroku'
+	gem 'autotest'
+	gem 'autotest-growl'
 end
 
 # Use unicorn as the web server
