@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.6'
 gem 'sass'
 gem 'mail'
+gem 'haml-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,6 +14,8 @@ group :development, :test do
 	gem 'heroku'
 	gem 'autotest'
 	gem 'autotest-growl'
+	gem 'hpricot'
+	gem 'ruby_parser'
 end
 
 # Use unicorn as the web server

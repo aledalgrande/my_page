@@ -9,7 +9,7 @@ html, body { height: 100%; background-color: #802222; }
 /* float clearing for everyone else */
 .clearfix:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; font-size: 0; }
 
-#skypedetectionswf { position: absolute; left: -1x 0px; top: 0px; }
+#skypedetectionswf { position: absolute; left: -10px; top: 0px; }
 
 #wrapper { font-family: Helvetica; font-size: 18px; line-height: 28.8px; background-color: #f7ede3; color: black; }
 #wrapper #introduction { text-shadow: 1px 1px 0px #FFFFFF; margin: auto; width: 1200px; height: 706px; background-image: url(../images/ale-filtered.png); background-repeat: no-repeat; }
