@@ -7,6 +7,7 @@ class HomeController < ApplicationController
                       :pair => 'Pair Programming',
                       :jquery => 'jQuery',
                       :tdd => 'TDD',
+                      :git => 'Git',
                       :mysql => 'MySQL',
                       :html => 'HTML 4/5',
                       :css => 'CSS 2/3',
@@ -20,6 +21,7 @@ class HomeController < ApplicationController
                       :mac => 'Mac',
                       :linux => 'Linux',
                       :php => 'PHP 5.2.x/5.3.x',
+                      :svn => 'SVN',
                       :phpagi => 'PHPAgi',
                       :java => 'Java 5/6' }
   end
