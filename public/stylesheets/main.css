@@ -12,39 +12,39 @@ html, body { height: 100%; background-color: #802222; }
 #skypedetectionswf { position: absolute; left: -10px; top: 0px; }
 
 #wrapper { font-family: Helvetica; font-size: 18px; line-height: 28.8px; background-color: #f7ede3; color: black; }
-#wrapper #introduction { text-shadow: 1px 1px 0px #FFFFFF; margin: auto; width: 1200px; height: 706px; background-image: url(../images/ale-filtered.png); background-repeat: no-repeat; }
+#wrapper #introduction { text-shadow: 1px 1px 0px white; margin: auto; width: 1200px; height: 706px; background-image: url(../images/ale-filtered.png); background-repeat: no-repeat; }
 #wrapper #introduction #teaser { background-image: url(../images/quotes.png); background-repeat: no-repeat; width: 400px; position: relative; left: 50%; top: 100px; text-align: center; padding-left: 80px; }
 #wrapper #introduction #teaser a { font-size: 30px; line-height: 45px; font-weight: bold; color: #802222; }
 #wrapper #introduction #teaser .title { font-size: 34px; line-height: 51px; font-weight: bold; }
 #wrapper #introduction #teaser .availability { font-size: 13px; line-height: 18px; }
 #wrapper #introduction #info { margin-top: 350px; }
-#wrapper #introduction #info .name { font-size: 50px; line-height: 60px; font-weight: bold; text-align: right; }
-#wrapper #introduction #info .description { font-size: 40px; font-weight: bold; text-align: right; font-style: italic; color: #802222; }
+#wrapper #introduction #info .name { font-size: 40px; line-height: 60px; font-weight: bold; text-align: right; }
+#wrapper #introduction #info .description { font-size: 30px; font-weight: bold; text-align: right; font-style: italic; color: #802222; }
 #wrapper #details { background-color: #802222; color: #f7ede3; background-image: url(../images/background.jpg); background-repeat: repeat-x; padding-top: 30px; }
 #wrapper #details #content { margin: auto; width: 900px; text-shadow: -1px -1px 0px #400000; }
 #wrapper #details #content #blablabla { background-image: url(../images/white-quotes.png); background-repeat: no-repeat; padding-left: 65px; }
-#wrapper #details #content #blablabla span.important { text-shadow: 1px 1px 0px #B05252; font-weight: bold; color: black; font-size: 19px; }
+#wrapper #details #content #blablabla span.important { text-shadow: 1px 1px 0px #b05252; font-weight: bold; color: black; font-size: 19px; }
 #wrapper #details #content #blablabla p a { font-weight: bold; text-decoration: underline; color: #f7ede3; }
 #wrapper #details #content #competencies ul li, #wrapper #details #content #industries ul li { padding: 5px; width: 290px; height: 50px; float: left; }
 #wrapper #details #content #competencies ul li img, #wrapper #details #content #industries ul li img { float: left; width: 50px; height: 50px; margin-right: 15px; border: 1px solid white; -moz-box-shadow: -1px -1px 0px black; -webkit-box-shadow: -1px -1px 0px black; box-shadow: -1px -1px 0px black; }
 #wrapper #details #content #competencies ul li p, #wrapper #details #content #industries ul li p { margin-top: 12px; }
-#wrapper #details #content #competencies h2, #wrapper #details #content #industries h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #B05252; }
-#wrapper #details #content #portfolio h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #B05252; }
-#wrapper #details #content #portfolio ul li span.important { text-shadow: 1px 1px 0px #B05252; font-weight: bold; color: black; font-size: 19px; }
+#wrapper #details #content #competencies h2, #wrapper #details #content #industries h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #b05252; }
+#wrapper #details #content #portfolio h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #b05252; }
+#wrapper #details #content #portfolio ul li span.important { text-shadow: 1px 1px 0px #b05252; font-weight: bold; color: black; font-size: 19px; }
 #wrapper #details #content #portfolio ul li a { font-weight: bold; text-decoration: underline; color: #f7ede3; }
-#wrapper #details #content #contacts h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #B05252; }
+#wrapper #details #content #contacts h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #b05252; }
 #wrapper #details #content #contacts ul li { cursor: pointer; }
 #wrapper #details #content #contacts ul li div { float: left; }
-#wrapper #details #content #contacts ul li div.name { width: 200px; text-shadow: 1px 1px 0px #B05252; font-weight: bold; color: black; }
+#wrapper #details #content #contacts ul li div.name { width: 200px; text-shadow: 1px 1px 0px #b05252; font-weight: bold; color: black; }
 #wrapper #details #content #contacts ul li div.directions { width: 640px; display: none; }
 #wrapper #details #content #contacts ul li.active { background-color: #903232; padding: 15px; }
 #wrapper #details #content #contacts ul li.active.directions p { margin: 5px; }
 #wrapper #details #content #contacts ul li.twilio img { width: 94px; height: 94px; vertical-align: middle; }
 #wrapper #details #content #contacts ul li.skype img { width: 111px; height: 40px; }
-#wrapper #details #content #contacts ul li.email form p.from input { font-family: Helvetica; font-size: 18px; line-height: 28.8px; padding: 3px; width: 500px; }
+#wrapper #details #content #contacts ul li.email form p.from input { font-family: Helvetica; font-size: 18px; line-height: 28.8px; width: 500px; padding: 3px; }
 #wrapper #details #content #contacts ul li.email form p.to { margin: 5px 0; }
 #wrapper #details #content #contacts ul li.email form p.to span { margin-left: 20px; }
-#wrapper #details #content #contacts ul li.email form p textarea { font-family: Helvetica; font-size: 18px; line-height: 28.8px; padding: 4px; width: 500px; margin-left: 52px; }
+#wrapper #details #content #contacts ul li.email form p textarea { font-family: Helvetica; font-size: 18px; line-height: 28.8px; width: 500px; padding: 4px; margin-left: 52px; }
 #wrapper #details #content #contacts ul li.posterous p a, #wrapper #details #content #contacts ul li.lrug p a { font-weight: bold; text-decoration: underline; color: #f7ede3; }
 #wrapper #details #content footer { text-align: center; margin-top: 100px; vertical-align: bottom; }
 #wrapper #details #content footer img { vertical-align: bottom; width: 850px; height: 194px; }

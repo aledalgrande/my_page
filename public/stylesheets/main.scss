@@ -1,11 +1,14 @@
-$red: #802222;
-$bright: #F7EDE3;
+$color1: #802222;
+$color2: #F7EDE3;
+$color3: #903232;
 $black: #000000;
-$basic_size: 18px;
+$base: 18px;
+$shadow1: #FFFFFF;
+$shadow2: #B05252;
 
 html, body {
 	height: 100%;
-	background-color: $red;
+	background-color: $color1;
 }
 
 /* float clearing for IE6 */
@@ -35,14 +38,36 @@ html, body {
 	top: 0px;
 }
 
+@mixin second {
+	font-size: $base + 6;
+	line-height: ($base + 6) * 1.5;
+	font-weight: bold;
+	margin-top: 30px;
+	color: $black;
+	text-shadow: 1px 1px 0px $shadow2;
+}
+
+@mixin highlighted {
+	text-shadow: 1px 1px 0px $shadow2;
+	font-weight: bold;
+	color: $black;
+}
+
+@mixin formelem {
+	font-family: Helvetica;
+	font-size: $base;
+	line-height: $base * 1.6;
+	width: 500px;
+}
+
 #wrapper {
 	font-family: Helvetica;
-	font-size: $basic_size;
-	line-height: $basic_size * 1.6;
-	background-color: $bright;
+	font-size: $base;
+	line-height: $base * 1.6;
+	background-color: $color2;
 	color: $black;
 	#introduction {
-		text-shadow: 1px 1px 0px #FFFFFF;
+		text-shadow: 1px 1px 0px $shadow1;
 		margin: auto;
 		width: 1200px;
 		height: 706px;
@@ -58,41 +83,41 @@ html, body {
 			text-align: center;
 			padding-left: 80px;
 			a {
-				font-size: 30px;
-				line-height: 45px;
+				font-size: $base + 12;
+				line-height: ($base + 12) * 1.5;
 				font-weight: bold;	
-				color: $red;
+				color: $color1;
 			}
 			.title {
-				font-size: 34px;
-				line-height: 51px;
+				font-size: $base + 16;
+				line-height: ($base + 16) * 1.5;
 				font-weight: bold;
 			}
 			.availability {
-				font-size: $basic_size - 5;
-				line-height: $basic_size;
+				font-size: $base - 5;
+				line-height: $base;
 			}
 		}
 		#info {
 			margin-top: 350px;
 			.name {
-				font-size: 50px;
-				line-height: 60px;
+				font-size: $base + 22;
+				line-height: ($base + 22) * 1.5;
 				font-weight: bold;
 				text-align: right;
 			}
 			.description {
-				font-size: 40px;
+				font-size: $base + 12;
 				font-weight: bold;
 				text-align: right;
 				font-style: italic;
-				color: $red;
+				color: $color1;
 			}
 		}
 	}
 	#details {
-		background-color: $red;
-		color: $bright;
+		background-color: $color1;
+		color: $color2;
 		background-image: url(../images/background.jpg);
 		background-repeat: repeat-x;
 		padding-top: 30px;
@@ -105,15 +130,13 @@ html, body {
 				background-repeat: no-repeat;
 				padding-left: 65px;
 				span.important {
-					text-shadow: 1px 1px 0px #B05252;
-					font-weight: bold;
-					color: $black;
-					font-size: $basic_size + 1;
+					@include highlighted;
+					font-size: $base + 1;
 				}
 				p a {
 					font-weight: bold;	
 					text-decoration: underline;
-					color: $bright;
+					color: $color2;
 				}
 			}
 			#competencies, #industries {
@@ -139,47 +162,30 @@ html, body {
 					}
 				}
 				h2 {
-					font-size: 24px;
-					line-height: 36px;
-					font-weight: bold;
-					margin-top: 30px;
-					color: $black;
-					text-shadow: 1px 1px 0px #B05252;
+					@include second;
 				}
 			}
 			#portfolio {
 				h2 {
-					font-size: 24px;
-					line-height: 36px;
-					font-weight: bold;
-					margin-top: 30px;
-					color: $black;
-					text-shadow: 1px 1px 0px #B05252;
+					@include second;
 				}
 				ul {
 					li {
 						span.important {
-							text-shadow: 1px 1px 0px #B05252;
-							font-weight: bold;
-							color: $black;
-							font-size: $basic_size + 1;
+							@include highlighted;
+							font-size: $base + 1;
 						}
 						a {
 							font-weight: bold;	
 							text-decoration: underline;
-							color: $bright;
+							color: $color2;
 						}
 					}
 				}
 			}
 			#contacts {
 				h2 {
-					font-size: 24px;
-					line-height: 36px;
-					font-weight: bold;
-					margin-top: 30px;
-					color: $black;
-					text-shadow: 1px 1px 0px #B05252;
+					@include second;
 				}
 				ul {
 					li {
@@ -188,9 +194,7 @@ html, body {
 							float: left;
 							&.name {
 								width: 200px;
-								text-shadow: 1px 1px 0px #B05252;
-								font-weight: bold;
-								color: $black;
+								@include highlighted;
 							}
 							&.directions {
 								width: 640px;
@@ -198,7 +202,7 @@ html, body {
 							}
 						}
 						&.active {
-							background-color: #903232;
+							background-color: $color3;
 							padding: 15px;
 							&.directions p {
 								margin: 5px;
@@ -215,11 +219,8 @@ html, body {
 						}
 						&.email form {
 							p.from input {
-								font-family: Helvetica;
-								font-size: $basic_size;
-								line-height: $basic_size * 1.6;
+								@include formelem;
 								padding: 3px;
-								width: 500px;
 							}
 							p.to {
 								margin: 5px 0;
@@ -228,21 +229,15 @@ html, body {
 								}
 							}
 							p textarea {
-								font-family: Helvetica;
-								font-size: $basic_size;
-								line-height: $basic_size * 1.6;
+								@include formelem;
 								padding: 4px;
-								width: 500px;
 								margin-left: 52px;
-							}
-							p.send {
-								
 							}
 						}
 						&.posterous p a, &.lrug p a {
 							font-weight: bold;	
 							text-decoration: underline;
-							color: $bright;
+							color: $color2;
 						}
 					}
 				}
