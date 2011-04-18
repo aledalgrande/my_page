@@ -44,7 +44,7 @@
 		</div>
 		<div id="industries" class="clearfix">
 			<h2>Industries of expertise</h2>
-			<ul>
+			<ul class="rumble">
 				<% %w(eCommerce Telephony Social Media).each do |name| %>
 					<li>
 						<%= image_tag "industries/#{name}.jpg", :title => name %>
@@ -88,7 +88,7 @@
 			<%= render :partial => 'contacts' %>
 		</div>
 		<footer>
-			<%= image_tag "london-city.png", :title => "title", :class => "class" %>
+			<%= image_tag "london-city.png", :title => "london city" %>
 		</footer>
 	</div>
 </div>

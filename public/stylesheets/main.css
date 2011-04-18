@@ -26,7 +26,7 @@ html, body { height: 100%; background-color: #802222; }
 #wrapper #details #content #blablabla span.important { text-shadow: 1px 1px 0px #B05252; font-weight: bold; color: black; font-size: 19px; }
 #wrapper #details #content #blablabla p a { font-weight: bold; text-decoration: underline; color: #f7ede3; }
 #wrapper #details #content #competencies ul li, #wrapper #details #content #industries ul li { padding: 5px; width: 290px; height: 50px; float: left; }
-#wrapper #details #content #competencies ul li img, #wrapper #details #content #industries ul li img { float: left; width: 50px; height: 50px; margin-right: 15px; }
+#wrapper #details #content #competencies ul li img, #wrapper #details #content #industries ul li img { float: left; width: 50px; height: 50px; margin-right: 15px; border: 1px solid white; -moz-box-shadow: -1px -1px 0px black; -webkit-box-shadow: -1px -1px 0px black; box-shadow: -1px -1px 0px black; }
 #wrapper #details #content #competencies ul li p, #wrapper #details #content #industries ul li p { margin-top: 12px; }
 #wrapper #details #content #competencies h2, #wrapper #details #content #industries h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #B05252; }
 #wrapper #details #content #portfolio h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #B05252; }
@@ -46,5 +46,5 @@ html, body { height: 100%; background-color: #802222; }
 #wrapper #details #content #contacts ul li.email form p.to span { margin-left: 20px; }
 #wrapper #details #content #contacts ul li.email form p textarea { font-family: Helvetica; font-size: 18px; line-height: 28.8px; padding: 4px; width: 500px; margin-left: 52px; }
 #wrapper #details #content #contacts ul li.posterous p a, #wrapper #details #content #contacts ul li.lrug p a { font-weight: bold; text-decoration: underline; color: #f7ede3; }
-#wrapper #details #content footer { text-align: center; margin-top: 50px; vertical-align: bottom; }
-#wrapper #details #content footer img { vertical-align: bottom; width: 850px; height: 100px; }
+#wrapper #details #content footer { text-align: center; margin-top: 100px; vertical-align: bottom; }
+#wrapper #details #content footer img { vertical-align: bottom; width: 850px; height: 194px; }
