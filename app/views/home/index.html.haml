@@ -35,7 +35,7 @@
       %ul.rumble
         - @competencies.each do |name, text|
           %li
-            = image_tag "competencies/#{name.downcase}.jpg", :title => name, :class => 'icon'
+            = image_tag "competencies/#{name.to_s.downcase}.jpg", :title => name, :class => 'icon'
             %p
               = text
     #industries.clearfix
