@@ -16,6 +16,7 @@ group :development, :test do
 	gem 'autotest-growl'
 	gem 'hpricot'
 	gem 'ruby_parser'
+	gem 'app_constants'
 end
 
 # Use unicorn as the web server

@@ -29,6 +29,7 @@ GEM
       activemodel (= 3.0.7)
       activesupport (= 3.0.7)
     activesupport (3.0.7)
+    app_constants (1.0.3)
     arel (2.0.9)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
@@ -107,6 +108,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  app_constants
   autotest
   autotest-growl
   haml-rails
