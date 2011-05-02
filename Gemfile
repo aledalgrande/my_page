@@ -4,6 +4,7 @@ gem 'rails', '3.0.7'
 gem 'sass'
 gem 'mail'
 gem 'haml-rails'
+gem 'app_constants'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -16,7 +17,6 @@ group :development, :test do
 	gem 'autotest-growl'
 	gem 'hpricot'
 	gem 'ruby_parser'
-	gem 'app_constants'
 end
 
 # Use unicorn as the web server
