@@ -2,9 +2,9 @@
   #teaser
     %p.title I bake tasty code
     %p
-      Yes, my code is good and you will like it! It has a taste of business value and it's delivered fast. What are you waiting to try it?
+      Yep, that's right, my code is great and you'll love it! It's got a great taste of business value and is served up fast. Why are you waiting?
     %a{:href => "#contacts"}
-      Hire me
+      Hire me now
     %p.availability (available from 13/5)
   #info
     %p.name Alessandro Dal Grande
@@ -13,21 +13,11 @@
   #content.clearfix
     #blablabla
       %p
-        Hi, I'm Alessandro, a
-        = succeed "." do
-          %span.important full stack Web developer
-        I started programming on my own during high school, with Visual Basic on Windows 98SE. Meh. That's a big jump being working with Ruby and Web now, more than 10 years later, but the outcome for me is the same as when I started: I
-        = succeed "." do
-          %span.important create something
-        And something
-        = succeed "." do
-          %span.important great
-      %p
         I live in London and work as a freelance Ruby and Rails developer, baking out solutions for my customers. Being a supporter of the Agile principles I like to
         %span.important communicate
         with people to solve their problems. I use also the best methodologies and technologies of present and future, as long as it is possible, because I think
         %span.important innovation
-        is what makes every day different from the previous one (see this #{link_to 'video of the mythical Jean-Claude Biver', 'http://liftconference.com/lift11/program/talk/anonymous-importance-innovation', :target => 'blank'} to see what I mean).
+        is what makes every day different from the previous one (see this #{link_to 'video of the mythical Jean-Claude Biver', 'http://liftconference.com/lift11/program/talk/anonymous-importance-innovation', :target => :blank} to see what I mean).
       %p
         I like entrepreneurship, startups, house music, bartending, art, a lot of sports and culture in general!
     #competencies.clearfix
@@ -50,29 +40,29 @@
       %h2.clearfix Public projects and Contributions
       %ul
         %li
-          %span.important BFT
-          a business to business product configurator (done for Develon) -
-          \#{link_to truncate('http://www.bft.co.uk/jsp/en/categorie/index.jsp', :length => 42), 'http://www.bft.co.uk/jsp/en/categorie/index.jsp', :target => 'blank'}
+          %p
+            \#{link_to 'BFT', 'http://www.bft.co.uk/jsp/en/categorie/index.jsp', :target => :blank}
+            a business to business product configurator (done for Develon)
         %li
-          %span.important segmented-memcache
-          fork of the memcache lib to include segmentation of big chunks -
-          \#{link_to truncate('http://github.com/develon/segmented-memcache', :length => 21), 'http://github.com/develon/segmented-memcache', :target => 'blank'}
+          %p
+            \#{link_to 'segmented-memcache', 'http://github.com/develon/segmented-memcache', :target => :blank}
+            fork of the memcache lib to include segmentation of big chunks
         %li
-          %span.important validates_as_vat_number
-          VAT validator using the European VIES system -
-          \#{link_to truncate('http://github.com/develon/validates_as_vat_number', :length => 32), 'http://github.com/develon/validates_as_vat_number', :target => 'blank'}
+          %p
+            \#{link_to 'validates_as_vat_number', 'http://github.com/develon/validates_as_vat_number', :target => :blank}
+            VAT validator using the European VIES system
         %li
-          %span.important mongo-twitter-streaming
-          test Sinatra and Twitter project -
-          \#{link_to truncate('http://github.com/aledalgrande/mongo-twitter-streaming', :length => 48), 'http://github.com/aledalgrande/mongo-twitter-streaming', :target => 'blank'}
+          %p
+            \#{link_to 'mongo-twitter-streaming', 'http://github.com/aledalgrande/mongo-twitter-streaming', :target => :blank}
+            test Sinatra and Twitter project
         %li
-          %span.important fancy-a-cake
-          example job request app -
-          \#{link_to truncate('http://github.com/aledalgrande/fancy-a-cake', :length => 48), 'http://github.com/aledalgrande/fancy-a-cake', :target => 'blank'}
+          %p
+            \#{link_to 'fancy-a-cake', 'http://github.com/aledalgrande/fancy-a-cake', :target => :blank}
+            example job request app
         %li
-          %span.important cuke4php
-          bridge between PHP and Cucumber -
-          \#{link_to truncate('http://github.com/aledalgrande/cuke4php', :length => 48), 'http://github.com/aledalgrande/cuke4php', :target => 'blank'}
+          %p
+            \#{link_to 'cuke4php', 'http://github.com/aledalgrande/cuke4php', :target => :blank}
+            bridge between PHP and Cucumber
     #contacts.clearfix
       = render :partial => 'contacts'
     %footer

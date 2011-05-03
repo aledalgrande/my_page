@@ -23,19 +23,19 @@ html, body { height: 100%; background-color: #802222; }
 #wrapper #details { background-color: #802222; color: #f7ede3; background-image: url(../images/background.jpg); background-repeat: repeat-x; padding-top: 30px; }
 #wrapper #details #content { margin: auto; width: 900px; text-shadow: -1px -1px 0px #400000; }
 #wrapper #details #content #blablabla { background-image: url(../images/white-quotes.png); background-repeat: no-repeat; padding-left: 65px; }
-#wrapper #details #content #blablabla span.important { text-shadow: 1px 1px 0px #b05252; font-weight: bold; color: black; font-size: 19px; }
+#wrapper #details #content #blablabla span.important { text-shadow: -1px -1px 0px black; font-weight: bold; color: #f7ede3; text-transform: uppercase; }
 #wrapper #details #content #blablabla p a { font-weight: bold; text-decoration: underline; color: #f7ede3; }
 #wrapper #details #content #competencies ul li, #wrapper #details #content #industries ul li { padding: 5px; width: 290px; height: 50px; float: left; }
 #wrapper #details #content #competencies ul li img, #wrapper #details #content #industries ul li img { float: left; width: 50px; height: 50px; margin-right: 15px; border: 1px solid white; -moz-box-shadow: -1px -1px 0px black; -webkit-box-shadow: -1px -1px 0px black; box-shadow: -1px -1px 0px black; }
 #wrapper #details #content #competencies ul li p, #wrapper #details #content #industries ul li p { margin-top: 12px; }
-#wrapper #details #content #competencies h2, #wrapper #details #content #industries h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #b05252; }
-#wrapper #details #content #portfolio h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #b05252; }
-#wrapper #details #content #portfolio ul li span.important { text-shadow: 1px 1px 0px #b05252; font-weight: bold; color: black; font-size: 19px; }
-#wrapper #details #content #portfolio ul li a { font-weight: bold; text-decoration: underline; color: #f7ede3; }
-#wrapper #details #content #contacts h2 { font-size: 24px; line-height: 36px; font-weight: bold; margin-top: 30px; color: black; text-shadow: 1px 1px 0px #b05252; }
+#wrapper #details #content #competencies h2, #wrapper #details #content #industries h2 { font-size: 26px; line-height: 39px; font-weight: bold; margin-top: 30px; color: #f7ede3; text-shadow: -1px -1px 0px black; }
+#wrapper #details #content #portfolio h2 { font-size: 26px; line-height: 39px; font-weight: bold; margin-top: 30px; color: #f7ede3; text-shadow: -1px -1px 0px black; }
+#wrapper #details #content #portfolio ul li p span.important { text-shadow: -1px -1px 0px black; font-weight: bold; color: #f7ede3; text-transform: uppercase; }
+#wrapper #details #content #portfolio ul li p a { font-weight: bold; text-decoration: underline; color: #f7ede3; }
+#wrapper #details #content #contacts h2 { font-size: 26px; line-height: 39px; font-weight: bold; margin-top: 30px; color: #f7ede3; text-shadow: -1px -1px 0px black; }
 #wrapper #details #content #contacts ul li { cursor: pointer; }
 #wrapper #details #content #contacts ul li div { float: left; }
-#wrapper #details #content #contacts ul li div.name { width: 200px; text-shadow: 1px 1px 0px #b05252; font-weight: bold; color: black; }
+#wrapper #details #content #contacts ul li div.name { width: 200px; text-shadow: -1px -1px 0px black; font-weight: bold; color: #f7ede3; }
 #wrapper #details #content #contacts ul li div.directions { width: 640px; display: none; }
 #wrapper #details #content #contacts ul li.active { background-color: #903232; padding: 15px; }
 #wrapper #details #content #contacts ul li.active.directions p { margin: 5px; }

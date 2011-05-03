@@ -39,18 +39,18 @@ html, body {
 }
 
 @mixin second {
-	font-size: $base + 6;
-	line-height: ($base + 6) * 1.5;
+	font-size: $base + 8;
+	line-height: ($base + 8) * 1.5;
 	font-weight: bold;
 	margin-top: 30px;
-	color: $black;
-	text-shadow: 1px 1px 0px $shadow2;
+	color: $color2;
+	text-shadow: -1px -1px 0px $black;
 }
 
 @mixin highlighted {
-	text-shadow: 1px 1px 0px $shadow2;
+	text-shadow: -1px -1px 0px $black;
 	font-weight: bold;
-	color: $black;
+	color: $color2;
 }
 
 @mixin formelem {
@@ -131,7 +131,7 @@ html, body {
 				padding-left: 65px;
 				span.important {
 					@include highlighted;
-					font-size: $base + 1;
+					text-transform: uppercase;
 				}
 				p a {
 					font-weight: bold;	
@@ -171,14 +171,16 @@ html, body {
 				}
 				ul {
 					li {
-						span.important {
-							@include highlighted;
-							font-size: $base + 1;
-						}
-						a {
-							font-weight: bold;	
-							text-decoration: underline;
-							color: $color2;
+						p {
+							span.important {
+								@include highlighted;
+								text-transform: uppercase;
+							}
+							a {
+								font-weight: bold;	
+								text-decoration: underline;
+								color: $color2;
+							}
 						}
 					}
 				}

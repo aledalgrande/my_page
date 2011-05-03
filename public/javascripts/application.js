@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('.active .directions').show();
-	$('ul.rumble li').jrumble({rumblee: 'img'});
+	$('ul.rumble li').jrumble({rumblee: 'img', rumbleSpeed: 100});
 	$('#contacts li').click(function() {
 		if (!$(this).hasClass('active')) {
 			$('#contacts li.active .directions').slideUp(500);
