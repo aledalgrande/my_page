@@ -1,4 +1,4 @@
-rvm 1.9.2@my_page
+rvm 1.9.2-p180@my_page
 if ! command -v bundle ; then
   gem install bundler
 fi
