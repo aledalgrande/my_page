@@ -126,3 +126,20 @@ img {
   float: left;
   margin-right: 0.5em;
 }
+
+@media screen and (max-width: 800px) {
+  .fluid-half-column {
+    float: none;
+    width: 87%;
+    padding: 3%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .timeline-title img {
+    display: none;
+  }
+  .timeline-content {
+    padding: 3%;
+  }
+}
