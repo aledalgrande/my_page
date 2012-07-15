@@ -1,0 +1,119 @@
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url(/img/tiny_grid.png);
+}
+
+.clearfix::after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  width: 90%;
+  margin: auto;
+}
+
+.fluid-half-column {
+  float: left;
+  width: 43.5%;
+  padding: 3%;
+}
+
+.spine {
+  border-left: 0.2em solid #C4CDE0;
+}
+
+.timeline-box {
+  border: 1px solid #C4CDE0;
+  margin-bottom: 2em;
+  position: relative;
+  background-color: white;
+}
+
+.timeline-connection {
+  clear: both;
+  float: left;
+  margin-left: -8.5%;
+  margin-top: 5%;
+  z-index: 3;
+  height: 1em;
+  width: 10%;
+  background-color: #7288B5;
+}
+
+.timeline-content {
+  padding: 1%;
+  background-color: white;
+}
+
+.timeline-title img {
+  width: 2em;
+  height: 2em;
+  float: left;
+  margin: 0 0.2em 0.2em 0;
+  vertical-align: middle;
+  border: 1px solid #CFCFCF;
+}
+
+.timeline-title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.timeline-title {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  border-bottom: 1px solid #EDEFF4;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.timeline-text {
+  font-size: 1em;
+}
+
+.timeline-date {
+  color: gray;
+  font-size: 0.9em;
+  margin-bottom: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.timeline-recommend {
+  background-color: #EDEFF4;
+  margin: 0 1% 1%;
+  padding: 0.3em;
+}
+
+.timeline-recommend span a {
+  text-decoration: none;
+  color: #7288B5;
+}
+
+.contacts {
+  margin-bottom: 0.5em;
+}
+
+.single-contact {
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin-right: 0.5em;
+}

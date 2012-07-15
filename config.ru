@@ -1,4 +1,3 @@
-# This file is used by Rack-based servers to start the application.
+require './my_page.rb'
 
-require ::File.expand_path('../config/environment',  __FILE__)
-run MyPage::Application
+run Sinatra::Application
