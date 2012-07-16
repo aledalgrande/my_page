@@ -32,6 +32,8 @@ img {
   float: left;
   width: 43.5%;
   padding: 3%;
+  border-top: 0.1em solid #CFCFCF;
+  margin-top: 1.875%;
 }
 
 .spine {
@@ -127,19 +129,77 @@ img {
   margin-right: 0.5em;
 }
 
-@media screen and (max-width: 800px) {
-  .fluid-half-column {
-    float: none;
-    width: 87%;
-    padding: 3%;
-  }
+#highlights {
+  padding: 0;
+  width: 100%;
+  overflow: scroll;
+}
+
+#highlights-overflow {
+  margin: 0 auto;
+  width: 68.8em;
+}
+
+.highlight {
+  width: 15em;
+  height: 8.4375em;
+  float: left;
+  border-bottom: 0.1em solid #CFCFCF;
+  border-right: 0.1em solid #CFCFCF;
+  border-left: 0.1em solid #CFCFCF;
+  margin: 0 1em;
+}
+
+h2 {
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
   .timeline-title img {
     display: none;
   }
+  
   .timeline-content {
+    padding: 5%;
+  }
+  
+  .new-line {
+    clear: both;
+  }
+  
+  #highlights-overflow {
+    width: 34.4em;
+  }
+  
+  .highlight {
+    margin: 1em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .fluid-half-column {
+    float: none;
+    width: 94%;
     padding: 3%;
+  }
+  
+  #highlights-overflow {
+    width: auto;
+  }
+  
+  .highlight {
+    float: none;
+    margin: 0 auto 1em auto;
+  }
+  
+  h2 {
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 0.275em;
+    text-align: center;
   }
 }
