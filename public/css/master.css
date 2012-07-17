@@ -155,7 +155,7 @@ img {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background-color: #7288B5;
+  background-color: rgba(114, 136, 181, 0.85);
   color: white;
   padding: 0.5em;
   font-weight: 700;
