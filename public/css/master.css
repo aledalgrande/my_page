@@ -32,7 +32,6 @@ img {
   float: left;
   width: 43.5%;
   padding: 3%;
-  border-top: 0.1em solid #CFCFCF;
   margin-top: 1.875%;
 }
 
@@ -173,6 +172,10 @@ img {
 
 h2 {
   display: none;
+}
+
+.typekit-badge {
+  left: -1px !important;
 }
 
 @media screen and (max-width: 1000px) {
